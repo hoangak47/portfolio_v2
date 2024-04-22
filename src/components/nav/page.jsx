@@ -4,12 +4,35 @@ import Link from "next/link";
 import {
   SvgHome,
   SvgLogo,
+  SvgMail,
   SvgProjects,
-  SvgResume,
   SvgShareGithub,
   SvgStar,
   SvgUser,
 } from "@/access/svg";
+
+const navItems = [
+  {
+    title: "Home",
+    to: "home",
+    icon: <SvgHome />,
+  },
+  {
+    title: "About",
+    to: "about",
+    icon: <SvgUser />,
+  },
+  {
+    title: "Projects",
+    to: "projects",
+    icon: <SvgProjects />,
+  },
+  {
+    title: "Contact",
+    to: "contact",
+    icon: <SvgMail />,
+  },
+];
 
 export default function Nav() {
   const nav_ = useRef(null);
@@ -42,58 +65,21 @@ export default function Nav() {
       </Link_>
       <div className="md:flex items-center hidden">
         <ul className="flex justify-center space-x-4">
-          <li className="px-4 py-2 relative">
-            <Link_
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={200}
-              className="flex items-center flex-nowrap justify-center nav-item cursor-pointer"
-            >
-              <SvgHome />
-              <span className="ml-2">Home</span>
-            </Link_>
-          </li>
-          <li className="px-4 py-2 relative">
-            <Link_
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={200}
-              className="flex items-center flex-nowrap justify-center nav-item cursor-pointer"
-            >
-              <SvgUser />
-              <span className="ml-2">About</span>
-            </Link_>
-          </li>
-          <li className="px-4 py-2 relative">
-            <Link_
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={200}
-              className="flex items-center flex-nowrap justify-center nav-item cursor-pointer"
-            >
-              <SvgProjects />
-              <span className="ml-2">Projects</span>
-            </Link_>
-          </li>
-          <li className="px-4 py-2 relative">
-            <Link_
-              activeClass="active"
-              to="resume"
-              spy={true}
-              smooth={true}
-              duration={200}
-              className="flex items-center flex-nowrap justify-center nav-item cursor-pointer"
-            >
-              <SvgResume />
-              <span className="ml-2">Resume</span>
-            </Link_>
-          </li>
+          {navItems.map((item, index) => (
+            <li key={index} className="px-4 py-2 relative">
+              <Link_
+                activeClass="active"
+                to={item.to}
+                spy={true}
+                smooth={true}
+                duration={200}
+                className="flex items-center flex-nowrap justify-center nav-item cursor-pointer"
+              >
+                {item.icon}
+                <span className="ml-2">{item.title}</span>
+              </Link_>
+            </li>
+          ))}
         </ul>
         <Link
           href="https://github.com/hoangak47"

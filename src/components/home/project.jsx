@@ -256,26 +256,39 @@ function Project() {
           })
         )}
       </div>
-      <AnimatedOnScroll
-        animation={"animate__backInLeft"}
-        className="mt-10"
-        threshold={0.3}
-      >
-        <h1 className="text-3xl font-bold text-center mt-2 text-white font-mono">
-          More projects are coming soon ...
-          <br />
-          <br />
-          You can see more projects at{" "}
-          <a
-            href="https://github.com/hoangak47"
-            target="_blank"
-            rel="noreferrer"
-            className="text-[var(--primary-color)]"
-          >
-            Github
-          </a>
-        </h1>
-      </AnimatedOnScroll>
+      <div className="flex flex-col md:flex-row gap-4 mt-10 items-center">
+        <AnimatedOnScroll
+          animation={"animate__backInLeft"}
+          className="mt-10 flex-2"
+          threshold={0.3}
+        >
+          <h1 className="text-3xl font-bold text-center mt-2 text-white font-mono">
+            More projects are coming soon ...
+            <br />
+            <br />
+            You can see more projects at{" "}
+            <a
+              href="https://github.com/hoangak47"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[var(--primary-color)]"
+            >
+              Github
+            </a>
+          </h1>
+        </AnimatedOnScroll>
+        <AnimatedOnScroll
+          animation={"animate__backInRight"}
+          className="mt-10 flex-2"
+          threshold={0.3}
+        >
+          <Image
+            src={require(`@/access/img/projects.png`)}
+            alt="projects"
+            className="m-auto w-1/2"
+          />
+        </AnimatedOnScroll>
+      </div>
     </div>
   );
 }

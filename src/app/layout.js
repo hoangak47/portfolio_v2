@@ -1,10 +1,10 @@
 "use client";
 
 import "./globals.css";
-import Nav from "@/components/nav/page";
 import "animate.css";
 import { useEffect, useRef } from "react";
 import Footer from "@/components/footer/page";
+import Nav from "@/components/nav/page";
 
 // function createStar() {
 //   const canvas_ = document.querySelectorAll(".canvas");

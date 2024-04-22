@@ -169,7 +169,7 @@ function About() {
         <AnimatedOnScroll
           animation={"animate__fadeInRight"}
           threshold={0}
-          className="flex md:justify-start justify-center flex-1 mt-10"
+          className="flex lg:justify-start justify-center flex-1 mt-10"
         >
           <Image
             src={skill}

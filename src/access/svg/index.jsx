@@ -67,28 +67,6 @@ export const SvgProjects = () => (
   </svg>
 );
 
-export const SvgResume = () => (
-  <svg
-    stroke="currentColor"
-    fill="none"
-    strokeWidth="0"
-    viewBox="0 0 24 24"
-    height="1em"
-    width="1em"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M7 18H17V16H7V18Z" fill="currentColor"></path>
-    <path d="M17 14H7V12H17V14Z" fill="currentColor"></path>
-    <path d="M7 10H11V8H7V10Z" fill="currentColor"></path>
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V9C21 5.13401 17.866 2 14 2H6ZM6 4H13V9H19V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4ZM15 4.10002C16.6113 4.4271 17.9413 5.52906 18.584 7H15V4.10002Z"
-      fill="currentColor"
-    ></path>
-  </svg>
-);
-
 export const SvgShareGithub = () => (
   <svg
     stroke="currentColor"
@@ -361,5 +339,69 @@ export const SvgVercel = ({
     viewBox="0 0 24 24"
   >
     <path fill={fill} d="M24 22.525H0l12-21.05z" />
+  </svg>
+);
+
+export const SvgPhone = ({
+  width = "1em",
+  height = "1em",
+  fill = "transparent",
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill={fill}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M3 5a2 2 0 0 1 2-2h3.28a1 1 0 0 1 .948.684l1.498 4.493a1 1 0 0 1-.502 1.21l-2.257 1.13a11.042 11.042 0 0 0 5.517 5.516l1.128-2.257a1 1 0 0 1 1.21-.502l4.494 1.498a1 1 0 0 1 .684.949V19a2 2 0 0 1-2 2h-1C9.716 21 3 14.284 3 6z"
+    />
+  </svg>
+);
+
+export const SvgMail = ({
+  width = "1em",
+  height = "1em",
+  fill = "currentColor",
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill={fill}
+      d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 4.99L4 6zm0 12H4V8l8 5l8-5z"
+    />
+  </svg>
+);
+
+export const SvgLocation = ({
+  width = "1em",
+  height = "1em",
+  fill = "transparent",
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+  >
+    <g
+      fill={fill}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+    >
+      <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0" />
+      <path d="M15 11a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+    </g>
   </svg>
 );

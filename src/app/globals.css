@@ -5,6 +5,8 @@
 :root {
   --white: #fff;
   --primary-color: #cd5ff8;
+  --primary-color-10: rgba(255, 255, 255, 0.1);
+  --primary-color-footer: #1f1f1f;
 }
 
 * {
@@ -19,6 +21,10 @@
 
 html {
   overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -95,7 +101,7 @@ html {
   backface-visibility: hidden;
   transform: rotateY(0deg);
   transition: transform 0.5s;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-color-10);
   padding: 1rem;
 }
 
@@ -107,7 +113,7 @@ html {
   backface-visibility: hidden;
   transform: rotateY(180deg);
   transition: transform 0.5s;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-color-10);
   padding: 1rem;
 }
 

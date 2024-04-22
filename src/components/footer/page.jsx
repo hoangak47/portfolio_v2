@@ -4,7 +4,10 @@ import { SvgFacebook, SvgGithub, SvgLinkedin } from "@/access/svg";
 
 export default function Footer() {
   return (
-    <footer className="w-full px-3 md:px-10 mx-auto text-center py-5 bg-black grid grid-cols-1 md:grid-cols-3">
+    <footer
+      className="w-full px-3 md:px-10 mx-auto text-center py-5 bg-[var(--primary-color-footer)]
+     grid grid-cols-1 md:grid-cols-3"
+    >
       <p className="text-lg text-white">
         Designed and Developed by HoangNguyen
       </p>

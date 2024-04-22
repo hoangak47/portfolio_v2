@@ -3,7 +3,7 @@
 import Home from "@/components/home/home";
 import About from "@/components/home/about";
 import Project from "@/components/home/project";
-import Resume from "@/components/home/resume";
+import Contact from "@/components/home/contact";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       <Home />
       <About />
       <Project />
-      <Resume />
+      <Contact />
     </div>
   );
 }
