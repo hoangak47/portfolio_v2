@@ -10,8 +10,8 @@ const w_h_icon = 30;
 const contact = [
   {
     icon: <SvgPhone width={w_h_icon} height={w_h_icon} />,
-    content: "+84 123 456 789",
-    href: "tel:+84123456789",
+    content: "+84 962 753 060",
+    href: "tel:+84962753060",
   },
   {
     icon: <SvgMail width={w_h_icon} height={w_h_icon} />,
