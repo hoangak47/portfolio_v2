@@ -3,8 +3,6 @@
 import "./globals.css";
 import "animate.css";
 import { useEffect, useRef } from "react";
-import Footer from "@/components/footer/page";
-import Nav from "@/components/nav/page";
 
 // function createStar() {
 //   const canvas_ = document.querySelectorAll(".canvas");
@@ -107,11 +105,7 @@ export function AnimatedOnScroll({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Nav />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
